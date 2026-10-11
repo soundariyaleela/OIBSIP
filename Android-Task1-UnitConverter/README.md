@@ -48,7 +48,7 @@ A simple Android app that converts values between common units of measurement. T
 
 | Length | Weight | Temperature |
 |---|---|---|
-| ![Length](Screenshots/length.jpeg) | ![Weight](Screenshots/weight.jpeg) | ![Temperature](Screenshots/temperature.jpeg) |
+| ![Length](Screenshots/length.jpeg) | ![Weight](Screenshots/weight.jpeg) | ![Temperature](Screenshots/temp.100.jpeg) |
 
 ## How to Run
 
