@@ -70,9 +70,10 @@ Android-Task1-UnitConverter/
 
 ## Demo
 
-Demo video: *(add your LinkedIn post link here)*
+Demo video: https://lnkd.in/p/gpx829cg
 
 ## Author
 
 **Soundariya Leela M**
+
 Android Application Development Intern, Oasis Infobyte
