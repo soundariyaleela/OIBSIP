@@ -55,13 +55,13 @@ A secure and user-friendly Android task manager developed using Java, XML and SQ
 
 ## Screenshots
 
-| Login | Sign Up | Task List |
+| Login | Task List |
 |---|---|---|
-| ![Login](screenshots/login.jpeg) | ![Sign Up](screenshots/signup.jpeg) | ![Tasks](screenshots/tasks.jpeg) |
+| ![Login](screenshots/Login.jpeg) |  ![Tasks](screenshots/Tasks.jpeg) |
 
 | Add Task | Empty State |
 |---|---|
-| ![Add Task](screenshots/add_task.jpeg) | ![Empty](screenshots/empty.jpeg) |
+| ![Add Task](screenshots/Add_Task.jpeg) | ![Empty](screenshots/Empty.jpeg) |
 
 ## How to Run
 
