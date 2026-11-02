@@ -61,7 +61,7 @@ A secure and user-friendly Android task manager developed using Java, XML and SQ
 
 | Add Task | Empty State |
 |---|---|
-| ![Add Task](screenshots/Add Task.jpeg) | ![Empty](screenshots/Empty.jpeg) |
+| ![Add Task](screenshots/Add_Task.jpeg) | ![Empty](screenshots/Empty.jpeg) |
 
 ## How to Run
 
