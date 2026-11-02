@@ -106,7 +106,7 @@ Android-Task2-ToDoAppWithLogin/
 
 ## Demo
 
-Demo video: [<paste your LinkedIn video link here>](https://lnkd.in/p/ggWEwmJp)
+Demo video: https://lnkd.in/p/ggWEwmJp 
 
 ## Author
 
