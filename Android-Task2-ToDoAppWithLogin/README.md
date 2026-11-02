@@ -1,43 +1,119 @@
-# To-Do App with Login (Android)
+# To-Do App with Login (Android App)
 
-**OIBSIP · Android App Development · Task 2**
+**Oasis Infobyte Internship (OIBSIP) - Android Application Development**  
+**Task 2: To-Do App with Login**  
+**Intern:** Soundariya Leela M
 
-A task manager where each user registers and logs in before seeing their own private to-do list. All data is stored locally in SQLite.
+---
+
+## About the Project
+
+A secure and user-friendly Android task manager developed using Java, XML and SQLite in Android Studio. Users create an account and log in before accessing their own personal to-do list. All data is stored locally on the device, and every task belongs to the user who created it.
 
 ## Features
-- **Sign-up** (name, email, password) and **Login** (email + password)
-- Passwords are **never stored in plain text**: salted SHA-256 hash in SQLite
-- **Session handling**: stays logged in across restarts; **Logout** clears the session and returns to Login
-- **Task list** per logged-in user (tasks are linked to the user by `user_id`)
-- **Add Task** dialog (task name + optional notes, with validation)
-- **Mark complete** via checkbox (strikethrough, moved below pending tasks)
-- **Delete** a task permanently (with confirmation)
-- **Empty state** message when there are no tasks
 
-## Tech stack
-Android Studio · Java · XML · SQLite (`SQLiteOpenHelper`) · Material Components
+- **Sign-up screen:** Register with name, email and password, with input validation
+- **Login screen:** Log in with email and password; wrong credentials show an error message
+- **Secure passwords:** Passwords are stored as salted SHA-256 hashes, never as plain text
+- **Session handling:** Stays logged in after the app is closed and reopened
+- **Logout button:** Clears the session and returns to the login screen
+- **Personal task list:** Each user sees only their own tasks
+- **Add Task:** Dialog to enter a task name and optional notes
+- **Mark as complete:** Checkbox shows completed tasks with a strikethrough and moves them below pending tasks
+- **Delete task:** Permanently removes a task after a confirmation prompt
+- **SQLite database:** Users and tasks are stored locally, with tasks linked to each user account
+- **Empty state:** Friendly message shown when the task list is empty
 
-## Project structure
+## Supported Actions
+
+| Action | Where | Result |
+|---|---|---|
+| Register | Sign-up screen | New account saved with a hashed password |
+| Login | Login screen | Opens your personal task list |
+| Add task | + button | Task saved to your list |
+| Complete task | Checkbox | Strikethrough, moved below pending tasks |
+| Delete task | Bin icon | Task removed permanently |
+| Logout | Logout button | Session cleared, back to login |
+
+## How It Works
+
+- **User Interface:** XML layouts for login, sign-up, task list, task row and the add-task dialog.
+- **Authentication:** `DatabaseHelper` stores each user with a random salt and a SHA-256 password hash. At login the entered password is hashed with the same salt and compared with the stored hash.
+- **Session Management:** `SessionManager` keeps the logged-in user in SharedPreferences, and Logout clears it.
+- **Database:** `users` and `tasks` tables in SQLite. Each task has a `user_id`, so queries return only the logged-in user's tasks.
+- **Task List:** A `ListView` with a custom `TaskAdapter` shows each task with a checkbox, title, notes and delete button.
+- **Validation:** Checks for a valid email, minimum password length, duplicate emails and empty task names.
+
+## Tech Stack
+
+- Android Studio
+- Java
+- XML (Android layouts)
+- SQLite (`SQLiteOpenHelper`)
+- Android SDK
+- Gradle
+
+## Screenshots
+
+| Login | Sign Up | Task List |
+|---|---|---|
+| ![Login](screenshots/login.jpeg) | ![Sign Up](screenshots/signup.jpeg) | ![Tasks](screenshots/tasks.jpeg) |
+
+| Add Task | Empty State |
+|---|---|
+| ![Add Task](screenshots/add_task.jpeg) | ![Empty](screenshots/empty.jpeg) |
+
+## How to Run
+
+1. Clone this repository or download it as a ZIP file.
+2. Open the `Android-Task2-ToDoAppWithLogin` folder in Android Studio.
+3. Wait for the Gradle sync to finish.
+4. Connect an Android phone with USB debugging enabled, or start an Android emulator.
+5. Click the green **Run** button to build and launch the application.
+6. Sign up, log in, then add, complete and delete tasks.
+
+## Project Structure
+
+```text
+Android-Task2-ToDoAppWithLogin/
+├── app/
+│   └── src/
+│       └── main/
+│           ├── java/
+│           │   └── com/oibsip/todoapp/
+│           │       ├── LoginActivity.java
+│           │       ├── SignupActivity.java
+│           │       ├── MainActivity.java
+│           │       ├── TaskAdapter.java
+│           │       ├── DatabaseHelper.java
+│           │       ├── SessionManager.java
+│           │       └── Task.java
+│           └── res/
+│               └── layout/
+│                   ├── activity_login.xml
+│                   ├── activity_signup.xml
+│                   ├── activity_main.xml
+│                   ├── item_task.xml
+│                   └── dialog_add_task.xml
+├── screenshots/
+└── README.md
 ```
-app/src/main/java/com/oibsip/todoapp/
-  LoginActivity.java     login screen + auto-redirect if session exists
-  SignupActivity.java    registration with validation
-  MainActivity.java      task list, add dialog, logout
-  TaskAdapter.java       list rows (checkbox, strikethrough, delete)
-  DatabaseHelper.java    users/tasks tables, hashing, CRUD
-  SessionManager.java    SharedPreferences-based session
-  Task.java              model
-app/src/main/res/layout/ activity_login, activity_signup, activity_main, item_task, dialog_add_task
-```
 
-## Database schema
+## Database Schema
+
 - `users(id, name, email UNIQUE, salt, password_hash)`
 - `tasks(id, user_id → users.id, title, notes, completed)`
 
-## Run it
-1. Open this folder in **Android Studio** (Hedgehog or newer) and let Gradle sync.
-2. Pick an emulator or a device (API 24+) and press **Run**.
-3. Sign up, log in, add / complete / delete tasks, then log out and try a second account to see that tasks are user-specific.
+## Demo
 
-## Screenshots
-Add your screenshots to a `screenshots/` folder (login, sign-up, task list, add dialog, empty state).
+Demo video: <paste your LinkedIn video link here>
+
+## Author
+
+**Soundariya Leela M**
+
+Android Application Development Intern, Oasis Infobyte
+
+---
+
+**#OasisInfobyte #OIBSIP #AndroidDevelopment #Java #AndroidStudio #SQLite #ToDoApp #MobileAppDevelopment**
