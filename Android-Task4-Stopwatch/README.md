@@ -81,7 +81,7 @@ Android-Task4-Stopwatch/
 
 ## Demo
 
-Demo video: <paste your LinkedIn video link here>
+Demo video: [<paste your LinkedIn video link here>](https://lnkd.in/p/g5XgKVRQ)
 
 ## Author
 
