@@ -1,7 +1,7 @@
 # Stopwatch (Android App)
 
 **Oasis Infobyte Internship (OIBSIP) - Android Application Development**  
-**Task 5: Stopwatch**  
+**Task 4: Stopwatch**  
 **Intern:** Soundariya Leela M
 
 ---
@@ -51,7 +51,7 @@ A simple and accurate Android stopwatch developed using Java and XML in Android 
 
 | Running | Laps | Stopped |
 |---|---|---|
-| ![Running](screenshots/running.jpeg) | ![Laps](screenshots/laps.jpeg) | ![Stopped](screenshots/stopped.jpeg) |
+| ![Running](screenshots/running.jpg) | ![Laps](screenshots/laps.jpg) | ![Stopped](screenshots/stopped.jpg) |
 
 ## How to Run
 
@@ -65,7 +65,7 @@ A simple and accurate Android stopwatch developed using Java and XML in Android 
 ## Project Structure
 
 ```text
-Android-Task5-Stopwatch/
+Android-Task4-Stopwatch/
 ├── app/
 │   └── src/
 │       └── main/
