@@ -51,12 +51,12 @@ A simple and accurate Android stopwatch developed using Java and XML in Android 
 
 | Running | Laps | Stopped |
 |---|---|---|
-| ![Running](screenshots/running.jpg) | ![Laps](screenshots/laps.jpg) | ![Stopped](screenshots/stopped.jpg) |
+| ![Running](screenshots/running.jpg) | ![Laps](screenshots/labs.jpg) | ![Stopped](screenshots/stopped.jpg) |
 
 ## How to Run
 
 1. Clone this repository or download it as a ZIP file.
-2. Open the `Android-Task5-Stopwatch` folder in Android Studio.
+2. Open the `Android-Task4-Stopwatch` folder in Android Studio.
 3. Wait for the Gradle sync to finish.
 4. Connect an Android phone with USB debugging enabled, or start an Android emulator.
 5. Click the green **Run** button to build and launch the application.
